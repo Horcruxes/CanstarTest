@@ -4,6 +4,10 @@ import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { HomepageComponent } from './components/homepage/homepage.component';
 import { EmployeesComponent } from './components/employees/employees.component';
+import { MatCardModule } from '@angular/material/card';
+import { MatButtonModule } from '@angular/material/button';
+import { MatTableModule } from '@angular/material/table';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -13,7 +17,11 @@ import { EmployeesComponent } from './components/employees/employees.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    MatCardModule,
+    MatButtonModule,
+    BrowserAnimationsModule,
+    MatTableModule,
+    AppRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
